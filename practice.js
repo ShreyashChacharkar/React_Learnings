@@ -1,12 +1,8 @@
-const proto = {
-    initProp: 500,
-  };
-  const obj = {
-    __proto__: proto,
-  };
-  
-  let text = ""
-  text += ("initProp" in obj) + " ";
-  text += ("initProp" in proto) + " ";
-  text += Object.hasOwn("initProp") + " ";
-  document.getElementById("p1").innerHTML = text;
+let a = prompt("Enter value of n")
+n = Number.parseInt(a)
+
+let i = 0;
+while(i<n){
+  console.log(i)
+  i++;
+}
