@@ -1,0 +1,29 @@
+.container {
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  animation-duration: 200;
+  max-width: 600px;
+  text-align: center;
+  background-color: rgb(65, 59, 59);
+  -webkit-text-fill-color: coral;
+}
+
+.passwo{
+  width: 200px;
+  border-radius: 5px;
+  -webkit-text-fill-color: grey;
+}
+
+.button{
+  background-color: #4b4be4;
+  -webkit-text-fill-color: white;
+  text-align: center;
+}
+
+.button:hover{
+  background-color: #151572;
+  -webkit-text-fill-color: white;
+}
+body{
+  background-color: black;
+}
