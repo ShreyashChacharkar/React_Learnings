@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 5rem;
+  padding: 5rem;
+  background-color: rgba(107, 95, 95, 0.377);
+  -webkit-text-fill-color: coral;
+}
+
+.card{
+  max-width: 320px;
+  
+}
+.container > .card {
+  flex: 0 1 calc(33.33% - 1rem);
+  margin: 0.5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+}
+.card > .img{
+  max-width: 250px;
+}

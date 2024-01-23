@@ -1,0 +1,22 @@
+.container-sm{
+  max-width: 560px;
+  padding:1.5rem;
+  background-color: rgba(128, 128, 128, 0.402);
+  -webkit-text-fill-color: aliceblue;
+  text-align: center;
+}
+
+.container{
+  background-color: rgba(247, 241, 241, 0.927);
+  -webkit-text-fill-color: rgb(10, 13, 15);
+}
+
+.button{
+  width: 120px;
+  height: 40px;
+  padding: 5px;
+  background-color: #2b24ac;
+  top: 50%;
+  transform: translate(0%, -20%);
+  z-index: 1;
+}
