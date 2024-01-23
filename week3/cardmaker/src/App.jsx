@@ -1,49 +1,26 @@
-// import { useState } from 'react'
 import './App.css'
+import Card from './components/Card';
+import userInfo from './hooks/userInfo';
+
 
 function App() {
+      let url = 'https://jsonplaceholder.typicode.com/posts'
+
+      const data = userInfo(url)
 
 
   return (
     <>
       <h1 style={{color:'white'}}>User Data</h1>
       <div className="container">
-      <div className="card" style={{width: "18rem"}}>
-          <img src="src\assets\react.svg" className="card-img-top" alt="..."/>
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
-          </div>
-      </div>
-      <div className="card" style={{width: "18rem"}}>
-          <img src="src\assets\react.svg" className="card-img-top" alt="..."/>
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the  content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
-          </div>
-      </div>
-      <div className="card" style={{width: "18rem"}}>
-          <img src="src\assets\react.svg" className="card-img-top" alt="..."/>
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the  content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
-          </div>
-      </div>
-      <div className="card" style={{width: "18rem"}}>
-          <img src="src\assets\react.svg" className="card-img-top" alt="..."/>
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
-          </div>
-      </div>
+        {data.map(user => (
+          <Card key={user.id} title={user.title} textBody={user.body} userId={user.userId}/>
+        ))}
       
+
       </div>
     </>
   )
 }
 
-export default App
+export default App;
